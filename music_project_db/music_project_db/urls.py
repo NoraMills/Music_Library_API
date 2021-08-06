@@ -19,5 +19,5 @@ from rest_framework import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("music_app.urls")),
+    path('', include('music.urls')),
 ]
