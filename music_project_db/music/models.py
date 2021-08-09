@@ -8,3 +8,7 @@ class Song(models.Model):
     artist = models.CharField(max_length=50)
     album = models.CharField(max_length=50)
     release_date = models.DateField()
+    likes = models.PositiveIntegerField(null=True, blank=True, default=0)
+
+
+
